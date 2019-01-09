@@ -4,11 +4,9 @@
 <dict>
 	<key>bundleid</key>
 	<string>me.tomoyukikashiro.dropbox-paper-finder</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>65E397E0-05A2-4DC1-844D-1E56DCA1E1F2</key>
+		<key>6540BABD-D92D-4357-AD27-525BB38CE8C1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -63,76 +61,38 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>dp</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Loading...</string>
+				<string>Loading</string>
 				<key>script</key>
-				<string>import sys
-import os
-import requests
-import json
-from datetime import datetime
-
-
-def format_date(str):
-    return datetime.strptime(str, '%Y-%m-%dT%H:%M:%SZ').isoformat().split('T')[0]
-
-
-def make_data(data):
-    subtitle = "{} updated / {} created".format(format_date(data['last_edited_date']), format_date(data['created_date']))
-    url = "https://paper.dropbox.com/doc/{}".format(data['doc_id'])
-    return {
-        'uid': data['doc_id'],
-        'title': data['title'],
-        'subtitle': subtitle,
-        'arg': url,
-        'autocomplete': data['title']
-    }
-
-
-query = sys.argv[1]
-token = os.environ['token']
-url = 'https://api.dropboxapi.com/2/paper/docs/search'
-limit = 100
-data = {'query': query, 'limit': limit}
-headers = {
-    'content-type': 'application/json',
-    'Authorization': "Bearer {}".format(token)
-}
-r = requests.post(url, headers=headers, data=json.dumps(data))
-data = map(make_data, r.json()['docs'])
-sys.stdout.write(json.dumps({'items': data}))
-
-
-
-</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>main.py</string>
 				<key>subtext</key>
-				<string>query</string>
+				<string></string>
 				<key>title</key>
 				<string>search dropbox paper</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>65E397E0-05A2-4DC1-844D-1E56DCA1E1F2</string>
+			<string>6540BABD-D92D-4357-AD27-525BB38CE8C1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -141,12 +101,12 @@ sys.stdout.write(json.dumps({'items': data}))
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>65E397E0-05A2-4DC1-844D-1E56DCA1E1F2</key>
+		<key>6540BABD-D92D-4357-AD27-525BB38CE8C1</key>
 		<dict>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>300</integer>
 		</dict>
 		<key>AEFAE652-536F-4AB8-B1E9-EEE87EB53D3F</key>
 		<dict>
@@ -159,7 +119,7 @@ sys.stdout.write(json.dumps({'items': data}))
 	<key>variables</key>
 	<dict>
 		<key>token</key>
-		<string></string>
+		<string>zJ7AHYQAgwcAAAAAAAAGSYEqDbr-seWZCHqoZkSUck65Fy8Xg1jD2mnG7EEDo3OV</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
