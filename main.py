@@ -3,6 +3,7 @@
 import sys
 import os
 import json
+import unicodedata
 from datetime import datetime
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'libs'))
@@ -26,7 +27,7 @@ def make_data(data):
     }
 
 
-query = sys.argv[1]
+query = unicodedata.normalize('NFC', sys.argv[1].decode('utf-8'))
 token = os.environ['token']
 url = 'https://api.dropboxapi.com/2/paper/docs/search'
 limit = 100
