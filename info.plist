@@ -61,7 +61,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>dp</string>
 				<key>queuedelaycustom</key>
@@ -75,7 +75,8 @@
 				<key>runningsubtext</key>
 				<string>Loading</string>
 				<key>script</key>
-				<string></string>
+				<string>query=`echo $1 | iconv -f UTF-8-MAC -t UTF-8`
+python main.py $query</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -85,7 +86,7 @@
 				<key>title</key>
 				<string>search dropbox paper</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -119,7 +120,7 @@
 	<key>variables</key>
 	<dict>
 		<key>token</key>
-		<string>zJ7AHYQAgwcAAAAAAAAGSYEqDbr-seWZCHqoZkSUck65Fy8Xg1jD2mnG7EEDo3OV</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
