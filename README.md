@@ -2,7 +2,7 @@
 
 Type `dp` to run !
 
-![image](https://i.gyazo.com/f08089175601d685316c6ef64e508fd7.gif)
+[![Image from Gyazo](https://i.gyazo.com/648a3cd9f00d1722d52419e16d184985.gif)](https://gyazo.com/648a3cd9f00d1722d52419e16d184985)
 
 ## Attention
 This workflow only support Alfred 3 (not support v2).
