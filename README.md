@@ -1,8 +1,8 @@
 # Alfred Workflow For Dropbox Paper
 
-Type `dp` to run !
+Type `paper` to run !
 
-[![Image from Gyazo](https://i.gyazo.com/648a3cd9f00d1722d52419e16d184985.gif)](https://gyazo.com/648a3cd9f00d1722d52419e16d184985)
+[![Image from Gyazo](https://i.gyazo.com/7c61f94e0ed3f5ed19ce4aeed12351ff.gif)](https://gyazo.com/7c61f94e0ed3f5ed19ce4aeed12351ff)
 
 ## Attention
 This workflow only support Alfred 3 (not support v2).
